@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import Category from "./components/Category";
 
 function App() {
   
@@ -15,6 +16,12 @@ function App() {
       });
   }, []);
 
+  const renderCategories = () => {
+    return (
+      results.map( (c) => <Category key={c.id} title={c.title}/>)
+    );
+  }
+
  
   return (
     <>
@@ -22,11 +29,7 @@ function App() {
       
       <section>
         <nav>
-        {
-          results.map( (d) => (
-            <div key={d.id}>{d.title}</div>
-          ))
-        }
+        {results && renderCategories()}
         </nav>
 
         <article>
