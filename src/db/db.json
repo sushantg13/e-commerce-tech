@@ -1,0 +1,22 @@
+{
+    "categories": [
+      { "id": 1, "title": "Laptops" },
+      { "id": 2, "title": "Smartphones" },
+      { "id": 3, "title": "Headphones" },
+      { "id": 4, "title": "Washing Machines" },
+      { "id": 5, "title": "Microwaves" }
+    ],
+    "products": [
+      { "id": 1, "catId": 1, "title": "Dell XPS 13 Laptop" },
+      { "id": 2, "catId": 1, "title": "MacBook Air M2" },
+      { "id": 3, "catId": 2, "title": "iPhone 15 Pro Max" },
+      { "id": 4, "catId": 2, "title": "Samsung Galaxy S24" },
+      { "id": 5, "catId": 3, "title": "Sony WH-1000XM5" },
+      { "id": 6, "catId": 3, "title": "Bose QuietComfort 45" },
+      { "id": 7, "catId": 4, "title": "LG Front Load Washer" },
+      { "id": 8, "catId": 4, "title": "Bosch Series 6 Washing Machine" },
+      { "id": 9, "catId": 5, "title": "Panasonic Inverter Microwave" },
+      { "id": 10, "catId": 5, "title": "Samsung Grill Microwave Oven" }
+    ]
+  }
+  
