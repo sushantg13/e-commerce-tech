@@ -16,13 +16,18 @@ function App() {
       });
   }, []);
 
+
+  const handleCategoryClick = (id) => {
+    alert("id: " + id);
+  }
+
+
   const renderCategories = () => {
     return (
-      results.map( (c) => <Category key={c.id} title={c.title}/>)
+      results.map( (c) => <Category key={c.id} title={c.title} onCategoryClick={() => handleCategoryClick(c.id)}/>)
     );
   }
 
- 
   return (
     <>
       <header>My Store</header>

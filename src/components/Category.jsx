@@ -1,8 +1,8 @@
 
-function Category({id, title}) {
+function Category({id, title, onCategoryClick}) {
     return (
         <>
-        <div key={id}>{title}</div>
+        <div key={id} onClick={() => onCategoryClick(id)}>{title}</div>
         </>
     );
 }
